@@ -1,0 +1,17 @@
+C:\Users\lucsf\source\repos\Funcionarios\Funcionarios\bin\Debug\Funcionarios.exe.config
+C:\Users\lucsf\source\repos\Funcionarios\Funcionarios\bin\Debug\Funcionarios.exe
+C:\Users\lucsf\source\repos\Funcionarios\Funcionarios\bin\Debug\Funcionarios.pdb
+C:\Users\lucsf\source\repos\Funcionarios\Funcionarios\obj\Debug\Funcionarios.Cadastro.resources
+C:\Users\lucsf\source\repos\Funcionarios\Funcionarios\obj\Debug\Funcionarios.Menu.resources
+C:\Users\lucsf\source\repos\Funcionarios\Funcionarios\obj\Debug\Funcionarios.Properties.Resources.resources
+C:\Users\lucsf\source\repos\Funcionarios\Funcionarios\obj\Debug\Cadastro.csproj.GenerateResource.cache
+C:\Users\lucsf\source\repos\Funcionarios\Funcionarios\obj\Debug\Cadastro.csproj.CoreCompileInputs.cache
+C:\Users\lucsf\source\repos\Funcionarios\Funcionarios\obj\Debug\Funcionarios.exe
+C:\Users\lucsf\source\repos\Funcionarios\Funcionarios\obj\Debug\Funcionarios.pdb
+C:\Users\lucsf\source\repos\Funcionarios\Funcionarios\obj\Debug\Funcionarios.Editar.resources
+C:\Users\lucsf\source\repos\Funcionarios\Funcionarios\obj\Debug\Cadastro.csprojAssemblyReference.cache
+C:\Users\lucsf\source\repos\Funcionarios\Funcionarios\obj\Debug\Funcionarios.Listar.resources
+C:\Users\lucsf\source\repos\Funcionarios\Funcionarios\bin\Debug\MySql.Data.dll
+C:\Users\lucsf\source\repos\Funcionarios\Funcionarios\bin\Debug\Google.Protobuf.dll
+C:\Users\lucsf\source\repos\Funcionarios\Funcionarios\bin\Debug\MySql.Data.xml
+C:\Users\lucsf\source\repos\Funcionarios\Funcionarios\obj\Debug\Cadastro.csproj.CopyComplete

@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="hashikoDataSet" targetNamespace="http://tempuri.org/hashikoDataSet.xsd" xmlns:mstns="http://tempuri.org/hashikoDataSet.xsd" xmlns="http://tempuri.org/hashikoDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="hashiko" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="hashiko (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Funcionarios.Properties.Settings.GlobalReference.Default.hashiko" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="accountsTableAdapter" GeneratorDataComponentClassName="accountsTableAdapter" Name="accounts" UserDataComponentName="accountsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hashiko (Settings)" DbObjectName="hashiko.accounts" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `login`, `passwd`, `app_acess`, `last_acess`, `created` FROM `accounts`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="adoptionsTableAdapter" GeneratorDataComponentClassName="adoptionsTableAdapter" Name="adoptions" UserDataComponentName="adoptionsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hashiko (Settings)" DbObjectName="hashiko.adoptions" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `Persons_id`, `Animals_id`, `created`, `comment`, `processed` FROM `adoptions`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="animalsTableAdapter" GeneratorDataComponentClassName="animalsTableAdapter" Name="animals" UserDataComponentName="animalsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hashiko (Settings)" DbObjectName="hashiko.animals" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `Animals_Breeds_id`, `sex`, `weight` FROM `animals`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="animals_breedsTableAdapter" GeneratorDataComponentClassName="animals_breedsTableAdapter" Name="animals_breeds" UserDataComponentName="animals_breedsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hashiko (Settings)" DbObjectName="hashiko.animals_breeds" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `name`, `visible`, `created`, `specication`, `Animals_Species_id` FROM `animals_breeds`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="animals_speciesTableAdapter" GeneratorDataComponentClassName="animals_speciesTableAdapter" Name="animals_species" UserDataComponentName="animals_speciesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hashiko (Settings)" DbObjectName="hashiko.animals_species" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `specie`, `visible` FROM `animals_species`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="app_configsTableAdapter" GeneratorDataComponentClassName="app_configsTableAdapter" Name="app_configs" UserDataComponentName="app_configsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hashiko (Settings)" DbObjectName="hashiko.app_configs" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `option`, `value` FROM `app_configs`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="personsTableAdapter" GeneratorDataComponentClassName="personsTableAdapter" Name="persons" UserDataComponentName="personsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hashiko (Settings)" DbObjectName="hashiko.persons" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `name`, `lastname`, `birth_day`, `sex`, `cpf`, `email`, `phone`, `adress_zipcode`, `adress_street`, `adress_number`, `created` FROM `persons`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="recordsTableAdapter" GeneratorDataComponentClassName="recordsTableAdapter" Name="records" UserDataComponentName="recordsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hashiko (Settings)" DbObjectName="hashiko.records" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `Accounts_id`, `Animals_id` FROM `records`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="records_historyTableAdapter" GeneratorDataComponentClassName="records_historyTableAdapter" Name="records_history" UserDataComponentName="records_historyTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hashiko (Settings)" DbObjectName="hashiko.records_history" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `Records_id`, `create` FROM `records_history`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="sponsorTableAdapter" GeneratorDataComponentClassName="sponsorTableAdapter" Name="sponsor" UserDataComponentName="sponsorTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hashiko (Settings)" DbObjectName="hashiko.sponsor" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `Persons_id`, `created`, `donate_price`, `Accounts_id` FROM `sponsor`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="stockTableAdapter" GeneratorDataComponentClassName="stockTableAdapter" Name="stock" UserDataComponentName="stockTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hashiko (Settings)" DbObjectName="hashiko.stock" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `name`, `type`, `quantity` FROM `stock`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="stock_logsTableAdapter" GeneratorDataComponentClassName="stock_logsTableAdapter" Name="stock_logs" UserDataComponentName="stock_logsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hashiko (Settings)" DbObjectName="hashiko.stock_logs" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `Stock_id`, `quantity`, `withdrawal`, `created`, `Accounts_id` FROM `stock_logs`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="waitlistTableAdapter" GeneratorDataComponentClassName="waitlistTableAdapter" Name="waitlist" UserDataComponentName="waitlistTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hashiko (Settings)" DbObjectName="hashiko.waitlist" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `animals_breeds_id`, `date_created`, `date_limite_expire`, `list_status`, `Persons_id`, `Accounts_id` FROM `waitlist`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="hashikoDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="hashikoDataSet" msprop:Generator_UserDSName="hashikoDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="accounts" msprop:Generator_TableClassName="accountsDataTable" msprop:Generator_TableVarName="tableaccounts" msprop:Generator_TablePropName="accounts" msprop:Generator_RowDeletingName="accountsRowDeleting" msprop:Generator_RowChangingName="accountsRowChanging" msprop:Generator_RowEvHandlerName="accountsRowChangeEventHandler" msprop:Generator_RowDeletedName="accountsRowDeleted" msprop:Generator_UserTableName="accounts" msprop:Generator_RowChangedName="accountsRowChanged" msprop:Generator_RowEvArgName="accountsRowChangeEvent" msprop:Generator_RowClassName="accountsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="adoptions" msprop:Generator_TableClassName="adoptionsDataTable" msprop:Generator_TableVarName="tableadoptions" msprop:Generator_TablePropName="adoptions" msprop:Generator_RowDeletingName="adoptionsRowDeleting" msprop:Generator_RowChangingName="adoptionsRowChanging" msprop:Generator_RowEvHandlerName="adoptionsRowChangeEventHandler" msprop:Generator_RowDeletedName="adoptionsRowDeleted" msprop:Generator_UserTableName="adoptions" msprop:Generator_RowChangedName="adoptionsRowChanged" msprop:Generator_RowEvArgName="adoptionsRowChangeEvent" msprop:Generator_RowClassName="adoptionsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="animals" msprop:Generator_TableClassName="animalsDataTable" msprop:Generator_TableVarName="tableanimals" msprop:Generator_TablePropName="animals" msprop:Generator_RowDeletingName="animalsRowDeleting" msprop:Generator_RowChangingName="animalsRowChanging" msprop:Generator_RowEvHandlerName="animalsRowChangeEventHandler" msprop:Generator_RowDeletedName="animalsRowDeleted" msprop:Generator_UserTableName="animals" msprop:Generator_RowChangedName="animalsRowChanged" msprop:Generator_RowEvArgName="animalsRowChangeEvent" msprop:Generator_RowClassName="animalsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="animals_breeds" msprop:Generator_TableClassName="animals_breedsDataTable" msprop:Generator_TableVarName="tableanimals_breeds" msprop:Generator_TablePropName="animals_breeds" msprop:Generator_RowDeletingName="animals_breedsRowDeleting" msprop:Generator_RowChangingName="animals_breedsRowChanging" msprop:Generator_RowEvHandlerName="animals_breedsRowChangeEventHandler" msprop:Generator_RowDeletedName="animals_breedsRowDeleted" msprop:Generator_UserTableName="animals_breeds" msprop:Generator_RowChangedName="animals_breedsRowChanged" msprop:Generator_RowEvArgName="animals_breedsRowChangeEvent" msprop:Generator_RowClassName="animals_breedsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="animals_species" msprop:Generator_TableClassName="animals_speciesDataTable" msprop:Generator_TableVarName="tableanimals_species" msprop:Generator_TablePropName="animals_species" msprop:Generator_RowDeletingName="animals_speciesRowDeleting" msprop:Generator_RowChangingName="animals_speciesRowChanging" msprop:Generator_RowEvHandlerName="animals_speciesRowChangeEventHandler" msprop:Generator_RowDeletedName="animals_speciesRowDeleted" msprop:Generator_UserTableName="animals_species" msprop:Generator_RowChangedName="animals_speciesRowChanged" msprop:Generator_RowEvArgName="animals_speciesRowChangeEvent" msprop:Generator_RowClassName="animals_speciesRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="app_configs" msprop:Generator_TableClassName="app_configsDataTable" msprop:Generator_TableVarName="tableapp_configs" msprop:Generator_TablePropName="app_configs" msprop:Generator_RowDeletingName="app_configsRowDeleting" msprop:Generator_RowChangingName="app_configsRowChanging" msprop:Generator_RowEvHandlerName="app_configsRowChangeEventHandler" msprop:Generator_RowDeletedName="app_configsRowDeleted" msprop:Generator_UserTableName="app_configs" msprop:Generator_RowChangedName="app_configsRowChanged" msprop:Generator_RowEvArgName="app_configsRowChangeEvent" msprop:Generator_RowClassName="app_configsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="persons" msprop:Generator_TableClassName="personsDataTable" msprop:Generator_TableVarName="tablepersons" msprop:Generator_TablePropName="persons" msprop:Generator_RowDeletingName="personsRowDeleting" msprop:Generator_RowChangingName="personsRowChanging" msprop:Generator_RowEvHandlerName="personsRowChangeEventHandler" msprop:Generator_RowDeletedName="personsRowDeleted" msprop:Generator_UserTableName="persons" msprop:Generator_RowChangedName="personsRowChanged" msprop:Generator_RowEvArgName="personsRowChangeEvent" msprop:Generator_RowClassName="personsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="records" msprop:Generator_TableClassName="recordsDataTable" msprop:Generator_TableVarName="tablerecords" msprop:Generator_TablePropName="records" msprop:Generator_RowDeletingName="recordsRowDeleting" msprop:Generator_RowChangingName="recordsRowChanging" msprop:Generator_RowEvHandlerName="recordsRowChangeEventHandler" msprop:Generator_RowDeletedName="recordsRowDeleted" msprop:Generator_UserTableName="records" msprop:Generator_RowChangedName="recordsRowChanged" msprop:Generator_RowEvArgName="recordsRowChangeEvent" msprop:Generator_RowClassName="recordsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="records_history" msprop:Generator_TableClassName="records_historyDataTable" msprop:Generator_TableVarName="tablerecords_history" msprop:Generator_TablePropName="records_history" msprop:Generator_RowDeletingName="records_historyRowDeleting" msprop:Generator_RowChangingName="records_historyRowChanging" msprop:Generator_RowEvHandlerName="records_historyRowChangeEventHandler" msprop:Generator_RowDeletedName="records_historyRowDeleted" msprop:Generator_UserTableName="records_history" msprop:Generator_RowChangedName="records_historyRowChanged" msprop:Generator_RowEvArgName="records_historyRowChangeEvent" msprop:Generator_RowClassName="records_historyRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="sponsor" msprop:Generator_TableClassName="sponsorDataTable" msprop:Generator_TableVarName="tablesponsor" msprop:Generator_TablePropName="sponsor" msprop:Generator_RowDeletingName="sponsorRowDeleting" msprop:Generator_RowChangingName="sponsorRowChanging" msprop:Generator_RowEvHandlerName="sponsorRowChangeEventHandler" msprop:Generator_RowDeletedName="sponsorRowDeleted" msprop:Generator_UserTableName="sponsor" msprop:Generator_RowChangedName="sponsorRowChanged" msprop:Generator_RowEvArgName="sponsorRowChangeEvent" msprop:Generator_RowClassName="sponsorRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="stock" msprop:Generator_TableClassName="stockDataTable" msprop:Generator_TableVarName="tablestock" msprop:Generator_TablePropName="stock" msprop:Generator_RowDeletingName="stockRowDeleting" msprop:Generator_RowChangingName="stockRowChanging" msprop:Generator_RowEvHandlerName="stockRowChangeEventHandler" msprop:Generator_RowDeletedName="stockRowDeleted" msprop:Generator_UserTableName="stock" msprop:Generator_RowChangedName="stockRowChanged" msprop:Generator_RowEvArgName="stockRowChangeEvent" msprop:Generator_RowClassName="stockRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="stock_logs" msprop:Generator_TableClassName="stock_logsDataTable" msprop:Generator_TableVarName="tablestock_logs" msprop:Generator_TablePropName="stock_logs" msprop:Generator_RowDeletingName="stock_logsRowDeleting" msprop:Generator_RowChangingName="stock_logsRowChanging" msprop:Generator_RowEvHandlerName="stock_logsRowChangeEventHandler" msprop:Generator_RowDeletedName="stock_logsRowDeleted" msprop:Generator_UserTableName="stock_logs" msprop:Generator_RowChangedName="stock_logsRowChanged" msprop:Generator_RowEvArgName="stock_logsRowChangeEvent" msprop:Generator_RowClassName="stock_logsRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="waitlist" msprop:Generator_TableClassName="waitlistDataTable" msprop:Generator_TableVarName="tablewaitlist" msprop:Generator_TablePropName="waitlist" msprop:Generator_RowDeletingName="waitlistRowDeleting" msprop:Generator_RowChangingName="waitlistRowChanging" msprop:Generator_RowEvHandlerName="waitlistRowChangeEventHandler" msprop:Generator_RowDeletedName="waitlistRowDeleted" msprop:Generator_UserTableName="waitlist" msprop:Generator_RowChangedName="waitlistRowChanged" msprop:Generator_RowEvArgName="waitlistRowChangeEvent" msprop:Generator_RowClassName="waitlistRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
